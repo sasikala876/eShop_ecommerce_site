@@ -1,7 +1,7 @@
 const express = require('express');
 const path = require('path');
 const app = express();
-const port = 4000;
+const port = 3000;
 
 var cors = require('cors');
 var bodyParser = require('body-parser');
@@ -37,7 +37,7 @@ app.use('/cartData', cartDetailsRouter);
 app.use(express.static(path.join(__dirname,"./frontend/build")));
 
 app.get("*", function(req,res) {
-    res.sendFile(psth.join(__dirname,"./frontend/build/index.html"));
+    res.sendFile(path.join(__dirname,"./frontend/build/index.html"));
 });
 
 app.listen(port,() => {
