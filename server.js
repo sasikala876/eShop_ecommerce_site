@@ -6,7 +6,7 @@ const port = 3000;
 var cors = require('cors');
 var bodyParser = require('body-parser');
 
-//importing routes
+//Importing routes
 const personalDetailsRouter = require('./routes/PersonalDetailsRoutes');
 const addressDetailsRouter = require('./routes/AddressDetailsRoutes');
 const cartDetailsRouter = require('./routes/CartPageRoutes');
